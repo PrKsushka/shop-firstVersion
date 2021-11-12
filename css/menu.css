@@ -1,0 +1,169 @@
+/*Кнопка меню*/
+.menu-button
+{
+    background-color: #222;
+    height: 70px;
+    width: 70px;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 100;
+}
+.menu-button:after
+{
+    content: "";
+    background-color: white;
+    height: 3px;
+    width: 50%;
+    position: absolute;
+    top: 27px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s ease;
+}
+.menu-button:hover:after
+{
+    top: 33px;
+}
+.menu-button.open-done:after
+{
+    transform: rotate(45deg);
+    left: 17px;
+    top: 33px;
+}
+.menu-button.open-done:hover:after
+{
+    transform: rotate(45deg);
+    left: 17px;
+    top: 33px;
+}
+.menu-button:before
+{
+    content: "";
+    background-color: white;
+    height: 3px;
+    width: 50%;
+    position: absolute;
+    top: 43px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s ease;
+}
+.menu-button:hover:before
+{
+    transform: rotate(90deg);
+    left: 17px;
+    top: 33px;
+}
+.menu-button.open-done:before
+{
+    transform: rotate(-45deg);
+    left: 17px;
+    top: 33px;
+}
+.menu-button.open-done:hover:before
+{
+    transform: rotate(-45deg);
+    left: 17px;
+    top: 33px;
+}
+/*Задвигающиеся блоки*/
+.menu-block-1
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background-color: #ffdae9;
+    transition: 1s;
+    z-index: 90;
+}
+.menu-block-1.open-done
+{
+    width: 100%;
+}
+.menu-block-2
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background-color: #222;
+    transition: 1s;
+    z-index: 90;
+}
+.menu-block-2.open-done
+{
+    width: 100%;
+}
+/*Навигация*/
+nav
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+nav ul li
+{
+    margin: 10vh 0;
+    list-style:none;
+}
+nav ul li a
+{
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Roboto';
+    color: white;
+    font-weight: 200;
+    font-size: 34px;
+    display: block;
+    transform: translateX(50px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s,
+                1s opacity,
+                1s transform;
+}
+nav ul li a:hover
+{
+    color: #ffdae9;
+}
+nav ul li a.open-done
+{
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+.menu-button
+{
+
+
+    left:50px;
+    right:0;
+}
+    }
+
+
+
+@media only screen and (max-width:610px) {
+
+.menu-button
+{
+    
+
+    top: 30px;
+    right:0;
+
+}
+nav{
+    top: 388px;
+    left: 174px;
+
+}
+}

@@ -1,0 +1,187 @@
+html {
+  margin: 0 auto;
+}
+html body section {
+  height: 100vh;
+}
+html body .header #bg {
+  background: url('../img/wall.png') no-repeat;
+}
+html body .firstPartText {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 755px;
+  align-items: center;
+  margin: 0 auto;
+}
+html body .firstPartText h3 {
+  font-family: 'Roboto';
+  font-size: 30px;
+}
+html body .firstPartText p {
+  font-family: 'Roboto';
+  font-size: 20px;
+}
+html body .bigPict {
+  background: url('../img/place.jpg') no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+html body .boxesForPict {
+  justify-content: space-around;
+  width: 100%;
+  height: 380px;
+  display: flex;
+  margin-top: 50px;
+}
+html body .boxesForPict img {
+  width: 300px;
+  height: 300px;
+}
+html body .secondBoxForPicture {
+  display: flex;
+  margin: 70px 0 70px 0;
+  width: 100%;
+  justify-content: center;
+}
+html body .secondBoxForPicture .one {
+  width: 544px;
+  height: 640px;
+  background: url('../img/flmain.jpg') no-repeat;
+  background-size: cover;
+  margin-right: 50px;
+}
+html body .secondBoxForPicture .two {
+  width: 500px;
+}
+html body .secondBoxForPicture .two img {
+  height: 310px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+html body .secondBox h2 {
+  font-family: 'Roboto';
+  font-size: 30px;
+  text-align: center;
+}
+html body .secondBox .firstPart {
+  display: flex;
+  flex-wrap: wrap;
+  width: 755px;
+  align-items: center;
+  margin: 0 auto;
+}
+html body .secondBox .firstPart h3 {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: bold;
+}
+html body .secondBox .firstPart p {
+  font-family: 'Roboto';
+  font-size: 20px;
+}
+html body .secondBox .firstPart .pict {
+  background: url('../img/fashion.jpg') no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 500px;
+}
+html body .secondBox .contained {
+  display: flex;
+  justify-content: center;
+}
+html body .secondBox .contained img {
+  width: 455px;
+  height: 609px;
+}
+html body .red {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+html body .red img {
+  width: 500px;
+}
+html body footer {
+  background: #171717;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  box-sizing: border-box;
+  padding: 50px 20px 0 20px;
+  justify-content: space-between;
+}
+html body footer p {
+  font-family: 'Arial';
+  font-size: 16px;
+  color: white;
+}
+html body footer .vverh {
+  font-family: 'Arial';
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  html body .footer {
+    display: none;
+  }
+  html body .header {
+    height: 88vh;
+  }
+  html body .boxesForPict {
+    justify-content: space-around;
+  }
+  html body .boxesForPict img {
+    width: 235px;
+    height: 235px;
+  }
+  html body .red img {
+    width: 332px;
+  }
+  html body .secondBox .contained img {
+    width: 331px;
+    height: 459px;
+  }
+}
+@media only screen and (max-width: 610px) {
+  html body .footer {
+    display: none;
+  }
+  html body .metka {
+    display: none;
+  }
+  html body .firstPartText {
+    width: 100%;
+  }
+  html body .bigPict {
+    height: 285px;
+  }
+  html body .boxesForPict img:nth-child(odd) {
+    display: none;
+  }
+  html body .secondBoxForPicture .one {
+    display: none;
+  }
+  html body .secondBoxForPicture .two img {
+    height: 240px;
+  }
+  html body .secondBox .firstPart {
+    width: 100%;
+  }
+  html body .secondBox .firstPart .pict {
+    height: 249px;
+  }
+  html body .secondBox .contained {
+    flex-direction: column;
+  }
+  html body .secondBox .contained img {
+    width: 363px;
+    height: 509px;
+  }
+  html body .red {
+    display: none;
+  }
+}

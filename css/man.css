@@ -1,0 +1,46 @@
+html body .header #bg{
+		background:url('../img/manBG.png') no-repeat;
+	}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  html body .header {
+    display: none;
+  }
+  html body .header #bg {
+    display: none;
+  }
+  html body .newHeader {
+    height: 440px;
+    background: #84aac5;
+    width: 99%;
+    display: flex;
+  }
+  }
+  @media only screen and (max-width: 350px) {
+  html body .header {
+    display: none;
+  }
+  html body .header #bg {
+    display: none;
+  }
+  html body .newHeader {
+    height: 440px;
+    background: #84aac5;
+    width: 99%;
+    display: flex;
+  }
+}
+
+@media only screen and (min-device-width: 350px) and (max-width: 610px) {
+	html body .header {
+    display: none;
+  }
+  html body .header #bg {
+    display: none;
+  }
+  html body .newHeader {
+    height: 440px;
+    background: #84aac5;
+    width: 99%;
+    display: flex;
+  }
+}

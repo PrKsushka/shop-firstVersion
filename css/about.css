@@ -1,0 +1,170 @@
+.ab {
+  text-align: center;
+  font-size: 35px;
+}
+.BigBox {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.BigBox .leftPicture {
+  background: url('../img/uslugi/1.jpg') no-repeat;
+  width: 50%;
+  background-size: cover;
+  background-position-y: center;
+}
+.BigBox .rightPicture {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.BigBox .rightPicture .ima {
+  width: 325px;
+  height: 325px;
+  margin-bottom: 20px;
+}
+.BigBox .rightPicture .ima.im1 {
+  background: url('../img/uslugi/2.png') no-repeat;
+  background-size: cover;
+}
+.BigBox .rightPicture .ima.im2 {
+  background: url('../img/uslugi/3.jpg') no-repeat;
+  background-size: cover;
+}
+.BigBox .rightPicture .ima.im3 {
+  background: url('../img/uslugi/4.jpg') no-repeat;
+  background-size: cover;
+}
+.BigBox .rightPicture .ima.im4 {
+  background: url('../img/uslugi/5.jpg') no-repeat;
+  background-size: cover;
+}
+.main {
+  box-sizing: border-box;
+  padding: 20px 20px 0 20px;
+  display: flex;
+  margin-bottom: 130px;
+}
+.main .mainLeft {
+  width: 50%;
+  height: 100vh;
+  background: url('../img/black.jpg') no-repeat;
+  background-size: cover;
+}
+.main .mainRight {
+  background: #f4f4f4;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 140px 0 0 89px;
+}
+.main .mainRight p {
+  font-family: 'Roboto';
+  font-size: 18px;
+}
+.obertka {
+  background: url('../img/rekl.png') no-repeat;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-size: cover;
+  box-sizing: border-box;
+  padding: 100px;
+  margin-bottom: 120px;
+}
+.obertka form {
+  width: 960px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.obertka form .wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 0 20px 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.obertka form .wrapper span {
+  font-family: 'Roboto';
+  font-size: 18px;
+  color: white;
+  margin-right: 20px;
+}
+.obertka form .wrapper input {
+  width: 67%;
+  border-radius: 20px;
+  height: 31px;
+}
+.obertka form textarea {
+  width: 900px;
+  height: 148px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+.map {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+.button.k {
+  display: flex;
+  margin: 0 auto;
+  padding-left: 37px;
+  width: 245px;
+  height: 60px;
+  padding: 18px 0 0 75px;
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin-bottom: 20px;
+}
+textarea::placeholder {
+  color: black;
+  font-family: 'Roboto';
+  font-size: 18px;
+  box-sizing: border-box;
+  padding: 20px 0 0 5px;
+}
+textarea::placeholder:focus:-moz-placeholder {
+  color: transparent;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .BigBox .leftPicture {
+    background-position-x: center;
+  }
+  .main .mainLeft {
+    background-position-x: center;
+  }
+  .obertka {
+    display: none;
+  }
+  .n {
+    display: none;
+  }
+}
+@media only screen and (max-width: 610px) {
+  .BigBox {
+    display: none;
+  }
+  .tk {
+    padding-top: 5px;
+  }
+  .n {
+    display: none;
+  }
+  .obertka {
+    display: none;
+  }
+  .main .mainLeft {
+    display: none;
+  }
+  .main .mainRight {
+    width: 100%;
+    padding: 200px 0 88px 40px;
+  }
+}
